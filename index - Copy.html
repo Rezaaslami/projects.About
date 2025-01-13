@@ -1,0 +1,132 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #222327;
+            flex-direction: column;
+        }
+        .reza {
+            width: 300px;
+            height: 300px;
+            background: #333;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 1px 2px 9px 10px rgb(72, 72, 72);
+            margin-bottom: 20px;
+        }
+        .aslami {
+            width: 209px;
+            height: 220px;
+            border-radius: 100px;
+        }
+        .div3 {
+            width: 340px;
+            height: auto;
+            position: relative;
+            text-align: center;
+        }
+        h4 {
+            box-shadow: 1px 2px 9px 10px rgb(72, 72, 72);
+            padding: 10px;
+            background: #444;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #555;
+            padding: 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            box-shadow: 1px 2px 9px 10px rgb(72, 72, 72);
+        }
+        .icon img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .reza {
+                width: 250px;
+                height: 250px;
+            }
+            .aslami {
+                width: 180px;
+                height: 180px;
+            }
+            .div3 {
+                width: 90%;
+                padding: 10px;
+            }
+            h4 {
+                font-size: 14px;
+            }
+            a {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .reza {
+                width: 200px;
+                height: 200px;
+            }
+            .aslami {
+                width: 150px;
+                height: 150px;
+            }
+            .div3 {
+                width: 90%;
+                padding: 5px;
+            }
+            h4 {
+                font-size: 12px;
+            }
+            a {
+                font-size: 12px;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reza">
+        <img class="aslami" src="images/PicsArt_11-15-10.30.21.jpg" alt="Reza Aslami">
+    </div>
+
+    <div class="div3">
+        <h4>I'm Mh.Reza Aslami, I am interested in the world of web development and I am always trying to learn new skills and improve the quality of my projects.</h4>
+
+        <a href="index.html">
+            <span class="icon"><img src="images/home.png" alt="Home"></span>
+            <span class="text">Home</span>
+        </a>
+    </div>
+</body>
+</html>

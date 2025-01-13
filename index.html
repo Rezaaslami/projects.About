@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><img style="width: 30px; height: 30px;" src="images/home.png" alt=""></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="index - Copy.html">
+                    <span class="icon"><img style="width: 30px; height: 30px;" src="images/user_male3-32.png" alt=""></span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href=" https://github.com/username/repository-rezaaslmi.git
+                ">
+                    <span class="icon"><img style="width: 30px; height: 30px;" src="images/cat.png" alt=""></span>
+                    <span class="text">Messages</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="https://t.me/Aslami_Codestyle">
+                    <span class="icon"><img style="width: 30px; height: 30px;" src="images/telegram.png" alt=""></span>
+                    <span class="text">Photos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="https://instagram.com/itx._.a3lami">
+                    <span class="icon"><img style="width: 30px; height: 30px;" src="images/instagram .png" alt=""></span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+    <script>
+        let list = document.querySelectorAll('.list');
+        
+        function activeLink() {
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        
+        list.forEach((item) => item.addEventListener('click', activeLink));
+    </script>
+</body>
+</html>
